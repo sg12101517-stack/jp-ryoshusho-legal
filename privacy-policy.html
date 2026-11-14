@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー｜適格領収書・請求書帳</title>
+  <style>
+    :root {
+      --konjo: #1B365D;
+      --shuin: #C53D43;
+      --bg: #F7F8FA;
+      --paper: #FFFFFF;
+      --ink: #19212C;
+      --muted: #5A6577;
+      --border: #D9E0EA;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Meiryo", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.8;
+    }
+    nav {
+      background: var(--konjo);
+      padding: 12px 20px;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    main {
+      max-width: 820px;
+      margin: 28px auto 48px;
+      padding: 0 16px;
+    }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+    }
+    h1 { color: var(--konjo); font-size: 1.5rem; margin-top: 0; }
+    h2 { color: var(--konjo); font-size: 1.12rem; margin-top: 24px; border-left: 4px solid var(--shuin); padding-left: 10px; }
+    .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 18px; }
+    ul { padding-left: 20px; }
+    footer { text-align: center; font-size: 0.85rem; color: var(--muted); padding: 16px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="./index.html">ホーム</a>
+    <a href="./privacy-policy.html">プライバシーポリシー</a>
+    <a href="./terms.html">利用規約（EULA）</a>
+    <a href="./support.html">サポート</a>
+  </nav>
+
+  <main>
+    <article class="card">
+      <h1>プライバシーポリシー（Privacy Policy）</h1>
+      <p class="meta">対象アプリ：適格領収書・請求書帳（Bundle ID: jp.ryoshusho.ledger.app）／ 制定日・最終更新日：2026年11月14日</p>
+
+      <p>
+        「適格領収書・請求書帳」（以下「本アプリ」といいます）は、個人事業主・フリーランスおよび小規模事業者の皆様が安心して業務帳票を作成できるよう、<strong>完全オフライン設計・個人情報の外部送信ゼロ</strong>を基本方針としています。
+      </p>
+
+      <h2>1. 収集しない情報（Zero Data Collection）</h2>
+      <p>本アプリはアカウント登録を必要とせず、開発者サーバーや外部の解析・広告ネットワークに対して、以下の情報を含めいかなるデータも送信・収集いたしません。</p>
+      <ul>
+        <li>氏名、屋号、会社名、住所、電話番号、メールアドレスなどの発行者情報</li>
+        <li>取引先名（宛名）、品目明細、金額、消費税額、振込先口座情報などの帳票データ</li>
+        <li>適格請求書発行事業者登録番号（T＋13桁）の入力値</li>
+        <li>端末識別子（IDFA/IDFV）、位置情報、行動ログ、アクセス解析データ</li>
+      </ul>
+
+      <h2>2. 端末内でのデータ保存と処理</h2>
+      <p>
+        作成された領収書・請求書データ、発行者設定、および月間無料PDF出力回数の管理データは、すべてお客様の iPhone / iPad 端末内の専用ストレージ領域（Application Support）にのみ保存されます。なお、適格請求書発行事業者登録番号（<code>^T\d{13}$</code>）の書式確認もすべて端末内ローカル処理で完結し、国税庁Web-API等への通信は一切行いません。
+      </p>
+
+      <h2>3. 写真ライブラリへのアクセス権限（PhotosPicker）</h2>
+      <p>
+        設定画面で「角印・丸印（PNG透過画像）」を選択する場合に限り、iOS標準の <code>PhotosPicker</code> を通じてお客様が明示的に選択した画像ファイルのみをアプリ内ローカル領域へコピー・保存します。選択されていない写真へのアクセスや外部サーバーへのアップロードは一切行いません。
+      </p>
+
+      <h2>4. アプリ内課金（StoreKit 2）について</h2>
+      <p>
+        Proプラン（月額・年額サブスクリプションおよび買い切りプラン）の決済・領収検証・購入復元は、すべて Apple Inc. が提供する公式フレームワーク（StoreKit 2）を通じて処理されます。クレジットカード番号等の決済情報を本アプリが取得・保持することはありません。
+      </p>
+
+      <h2>5. 第三者提供・広告・トラッキング</h2>
+      <p>
+        本アプリには第三者製広告SDK、解析SDK、トラッキングツール（App Tracking Transparency 対象機能）は一切組み込まれておりません。また、出力されるPDF帳票にも広告用QRコードは一切付与されません。
+      </p>
+
+      <h2>6. データの削除方法</h2>
+      <p>
+        台帳上の帳票はアプリ内のスワイプ削除操作によりいつでも削除できます。本アプリを端末からアンインストールすることで、端末内に保存されたすべての帳票データおよび角印画像は完全に消去されます。
+      </p>
+
+      <h2>7. お問い合わせ窓口（Contact）</h2>
+      <p>
+        本プライバシーポリシーに関するご質問やご要望は、下記のサポート窓口までご連絡ください。<br>
+        サポートメール：<a href="mailto:sg12101517@gmail.com">sg12101517@gmail.com</a>
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2026 適格領収書・請求書帳 (JP-Ryoshusho).
+  </footer>
+</body>
+</html>
